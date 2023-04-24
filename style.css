@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(100, 100, 100, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+
+}
+
+.titulo_principal {
+    margin-bottom: 1rem;
+}
+
+#inserir_tarefa {
+    margin-top: 1rem;
+    width: 180px;
+    border: none;
+    border-radius: 10px;
+    height: 20px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: solid 2px #fff;
+    color: #fff;
+    margin-left: 1rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    outline-style: none;
+}
+
+#tituloTarefa {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+}
+#listaTarefa li{
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+}
+
+.botao {
+    cursor: pointer;
+    outline-style: none;
+    border: solid 2px #fff;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    margin-left: 1rem;
+}
+
+.botao:hover {
+    background-color: rgba(5, 5, 5, .5);
+
+}
+.botoes {
+    margin-top: 2rem;
+}
+
+.res {
+    margin: 2rem 2.5rem;
+    text-align: start;
+}
+
+.item_tarefa {
+    cursor: pointer;
+    width: 300px;
+    padding: 1rem;
+}
+
+.item_tarefa:hover {
+    background-color: rgba(5, 5, 5, .5);
+    border-radius: 10px;
+}
+
+.tarefaCompleta {
+    background-color: rgba(5, 5, 5, .5);
+    border-radius: 10px;
+    text-decoration: line-through;
+    color: rgb(88, 255, 88);
+}
+
+.itemSelecionado {
+    background-color: rgba(5, 5, 5, .5);
+    border-radius: 10px;
+}

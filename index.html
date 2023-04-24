@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="titulo_principal">Lista de Tarefas</h1>
+            <p>Clique duas vezes em um item para marcá-lo como completo. </p>
+        </div>
+        <div>
+            <input type="text" name="insert" id="inserir_tarefa" placeholder="Adicionar Tarefa">
+            <button class="botao" id="botao_submit">Inserir</button>
+        </div>
+        <div class="res" id="res">
+            <h2 id="tituloTarefa">Adicione uma tarefa...</h2>
+
+            <ol id="listaTarefa">
+                <!-- Itens da lista adicionados via javascript -->
+            </ol>
+        </div>
+        <div class="botoes">
+            <button class="botao" id="botaoUp">UP</button>
+            <button class="botao" id="botaoDown">DOWN</button>
+            <button class="botao" id="limparLista">Limpar Lista</button>
+            <button class="botao" id="removerCompletas">Remover Completas</button>
+            <button class="botao" id="removerSelecionadas">Remover Selecionadas</button>
+            <button class="botao" id="salvarTarefas">Salvar Tarefas</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
