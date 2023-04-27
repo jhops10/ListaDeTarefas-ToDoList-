@@ -27,28 +27,28 @@ function addTarefa() {
         alert('ERRO! Você deve preencher o campo "Adicionar Tarefa"');
     } else {
 
-        //Cria um novo elemento "li"
+        
         const novaTarefa = document.createElement('li');
 
-        //Adiciona o valor de 'inputTarefa' ao 'li'
+        
         novaTarefa.innerHTML += inputTarefa.value;
 
-        //Adiciona a classe 'item_tarefa'
+        
         novaTarefa.classList.add('item_tarefa');
 
-        //Adiciona o evento de escuta no novo 'item_tarefa' e uma função que adiciona uma nova classe 'tarefaCompleta'
+        
         novaTarefa.addEventListener('dblclick', () => novaTarefa.classList.toggle('tarefaCompleta'));
 
-        //Adiciona o evento de escuta e a função 'itemSelecionado'
+        
         novaTarefa.addEventListener('click', () => novaTarefa.classList.toggle('itemSelecionado'));
 
-        //'listaDeTarefa' "adota" 'novaTarefa'
+        
         listaDeTarefa.appendChild(novaTarefa);
 
-        //Limpa o campo 'inputTarefa'
+        
         inputTarefa.value = ``;
 
-        //'inputTarefa' ganha o foco para adicionar novas tarefas.
+        
         inputTarefa.focus();
     }
 }
